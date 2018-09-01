@@ -2,7 +2,7 @@
 import random
 
 
-print("Welcome to Guess the Dice by 3DDI3")
+print("Welcome to Guess the Dice by ChovekutAyran")
 
 
 #Sets a while loop so that you can continuoulsy play the game 
