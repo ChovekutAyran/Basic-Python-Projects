@@ -43,7 +43,7 @@ while True:
 		continue
 
 	#If you set the input as "N", "n", "NO" or "no", Python will bid farewell with you and will break the while loop, thus quitting the program 
-	elif play_again == "N" or play_again == "n" or play_again == "NO" or play_again == "no"
+	elif play_again == "N" or play_again == "n" or play_again == "NO" or play_again == "no":
 		print("Goodbye")
 		break 
 
