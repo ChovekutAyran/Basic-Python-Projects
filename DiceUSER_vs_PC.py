@@ -5,7 +5,7 @@ import random
 import time
 
 
-print("Welcome to Player vs. PC(Dice) by 3DDI3")
+print("Welcome to Player vs. PC(Dice) by ChovekutAyran")
 
 
 #Slows the time 
