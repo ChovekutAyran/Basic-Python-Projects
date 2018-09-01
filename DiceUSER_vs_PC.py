@@ -37,10 +37,6 @@ while True:
 		print("Goodbye")
 		break
 	
-	#If you do not set the input as one of the following the loop will continue
-	else:
-		print("INVALID INPUT")
-		continue
 
 
 
