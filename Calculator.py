@@ -1,22 +1,25 @@
-#The following block of code is the class of functions that come with the Calculator 
 class calculator:
-	def addition(a,b):
-		#This function allows you to add
+
+	#This function allows you to add
+	def addition(a, b):
 		add = a + b
 		return add
 		
-	def subtraction(a,b):
-		#This functiom allows you to subtract
+
+	#This functiom allows you to subtract	
+	def subtraction(a, b):
 		subt = a - b 
 		return subt
 
-	def multiplication(a,b):
-		#This function allows you to mulitply
+
+	#This function allows you to mulitply
+	def multiplication(a, b):
 		mult = a * b 
 		return mult
 		
-	def division(a,b):
-		#This function allows you to divide. Added Exception for ZeroDivisionError
+
+	#This function allows you to divide. Added Exception for ZeroDivisionError
+	def division(a, b):
 		try:
 			div = a / b
 		except ZeroDivisionError:
@@ -24,7 +27,17 @@ class calculator:
 		return div
 
 
-print("Welcome to Python Calculator by ChovekutAyran")
+	#This function allows you to use modular arithmetic. Added Exception for ZeroDivisionError
+	def modular(a, b):
+		try:
+			mod = a % b
+		except ZeroDivisionError:
+			mod = int('0')
+		return mod
+
+
+
+print("Welcome to Python Calculator by 3DDI3")
 
 
 #Sets a while loop so that you can continuously calculate
@@ -35,8 +48,8 @@ while True:
 	print("2.Subtraction")
 	print("3.Multiplication")
 	print("4.Division")
-	print("5.Quit")
-
+	print("5.Modular Arithmetic")
+	print("6.Quit")
 
 
 
@@ -46,15 +59,16 @@ while True:
 
 
 	#If your choice does not equal one of the given options the loop will restart
-	if choice > "5" or choice <"1":
+	if choice > "6" or choice <"1":
 		print("INVALID INPUT")
 		continue
 
 
 	#If you choose "5" as the input, the while loop will break, thus quitting the Calculator 
-	if choice == "5":
+	if choice == "6":
 		print("Goodbye")
 		break
+
 
 
 	#With the following line, Python will ask you for the first numebr of the equation and will set it as an integer. Added exception for ValueError	
@@ -79,22 +93,26 @@ while True:
 
 	#If you choose 1 as the input, Python will use the addition function 
 	if choice == '1':
-		print(z,"+",y,"=", calculator.addition(z,y))
+		print(z, "+", y, "=", calculator.addition(z,y))
 
 
 	#If you choose 2 as the input, Python will use the subtraction function 
 	elif choice == '2':
-		print(z,'-',y,'=', calculator.subtraction(z,y))
+		print(z, '-', y, '=', calculator.subtraction(z,y))
 
 
 	#If you choose 3 as the input, Python will use the multiplication function 
 	elif choice == '3':
-		print(z,'*',y,'=', calculator.multiplication(z,y))
+		print(z, '*', y, '=', calculator.multiplication(z,y))
 
 
 	#If you choose 4 as the input, Python will use the division function 
 	elif choice == '4':
-		print(z,'/',y,'=', calculator.division(z,y))
+		print(z, '/' ,y, '=', calculator.division(z,y))
+
+
+	elif choice == '5':
+		print(z, '%', y, '=', calculator.modular(z,y))
 
 
 	#If you choose a value that is not given in the list, the output will be this 
@@ -107,6 +125,7 @@ while True:
 
 	#With the following line, Python asks you if you want to calculate again 
 	calc_again = input("Do you want to calculate again? "+"Please type Y for YES or N for NO.")
+
 
 
 	#If you set the output as Y, y, YES, or yes, Python will continue 
