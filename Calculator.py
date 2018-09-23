@@ -37,7 +37,7 @@ class calculator:
 
 
 
-print("Welcome to Python Calculator by 3DDI3")
+print("Welcome to Python Calculator by ChovekutAyran")
 
 
 #Sets a while loop so that you can continuously calculate
