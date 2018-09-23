@@ -18,7 +18,7 @@ import random as r
 while True:
 
 
-	print("Welcome to Rock, Paper, Scissors by 3DDI3")
+	print("Welcome to Rock, Paper, Scissors by ChovekutAyran")
 	print("Select:")
 	print("1.Play against another Player")
 	print("2.Play against the Computer")
